@@ -12,7 +12,8 @@ function nombres_videojuegos(...nombres: string[]) {
     for(let nombre of nombres) {
 
         if(nombre.match(re_mario)) {
-            continue
+            nombre = "Incumple con re"
+            videojuegos += nombre + ","
         }
         else {
             videojuegos += nombre + ","
@@ -26,17 +27,18 @@ function nombres_videojuegos(...nombres: string[]) {
 }
 
 function factorial(numero: number) {
-    var resultado: number
-    var i: number=0
+    var resultado: number = numero
+    var i:number = numero
+
     
-    while(i<=numero) {
+    while(i > 1) {
         var descuento = --numero;
-        resultado *= descuento
-        i++
+        resultado = resultado * descuento
+        i--
     } 
     return resultado
 }
 
-console.log("Prueba primera función que calcula nota: " + calculo_nota(10,10,10))
-console.log("Prueba de la segunda función del array de videojuegos" + nombres_videojuegos("mario Odisea", "Parchís", "Juego de las frutitas"))
-console.log("Prueba de la tercera función que calcula factorial de un número" + factorial(6))
+console.log("Prueba primera función que calcula nota: " + calculo_nota(8,7,4))
+console.log("Prueba de la segunda función del array de videojuegos: " + nombres_videojuegos("mario Odisea", "Parchís", "Juego de las frutitas"))
+console.log("Prueba de la tercera función que calcula factorial de un número: " + factorial(6))
