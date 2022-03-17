@@ -1,4 +1,4 @@
-# Ejercicio TypeScript.
+# Ejercicio 7. TypeScript.
 
 Hacer los siguientes ejercicios en TS.
 

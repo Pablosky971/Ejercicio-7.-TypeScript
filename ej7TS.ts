@@ -8,7 +8,6 @@ function nombres_videojuegos(...nombres: string[]) {
 
     var videojuegos: string
     var re_mario = /^(mario)/
-
     for(let nombre of nombres) {
 
         if(nombre.match(re_mario)) {

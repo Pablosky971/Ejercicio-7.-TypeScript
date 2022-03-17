@@ -5,6 +5,7 @@ function calculo_nota(media_parciales, examen_final, trabajo_final) {
 function nombres_videojuegos(...nombres) {
     var videojuegos;
     var re_mario = /^(mario)/;
+    var nombre = "";
     for (let nombre of nombres) {
         if (nombre.match(re_mario)) {
             nombre = "Incumple con re";
